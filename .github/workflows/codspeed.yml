@@ -27,7 +27,7 @@ jobs:
     - name: Run the benchmarks
       uses: CodSpeedHQ/action@v4
       with:
-        upload-url: ${{ secrets.CODSPEED_STAGING_UPLOAD_URL }}
+        upload-url: https://api.staging.preview.codspeed.io/upload
         mode: simulation
         run: cargo codspeed run
     - name: Wait 15 minutes (go to bed)
